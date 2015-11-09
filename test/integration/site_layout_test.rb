@@ -7,7 +7,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
 
   test "the truth caster" do
   	get root_path
-  	assert_reponse :success
+  	assert_response :success
   	assert_select 'a[href=?]', about_path
   	assert_select 'a[href=?]', help_path
   	assert_select 'a[href=?]', contact_path
